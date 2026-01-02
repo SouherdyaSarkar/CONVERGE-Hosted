@@ -42,17 +42,16 @@ const EventsSection = () => {
       onClick={() => setSelectedEvent(event)}
       className="w-full group"
     >
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 
-      items-center py-4 border-b border-border/30 
+      <div className="grid grid-cols-3 md:grid-cols-4 gap-4
+      items-center py-2 border-b border-border/20 
       hover:border-primary/50 transition-colors cursor-pointer">
         <span className="text-foreground/60 font-display">{event.id}</span>
         <span className="text-foreground font-medium col-span-1 
         group-hover:text-primary transition-colors">{event.name}</span>
-        <span className="text-foreground/80 
-        display-none md:display-block font-display text-right">{event.date}</span>
-        <span className="text-foreground/80 
-        display-none md:display-block font-display text-right 
-        group-hover:text-primary transition-colors">{event.time}</span>
+        <span className="text-foreground/80 font-display
+        col-span-1 md:col-span-1 md:text-right">{event.date}</span>
+        <span className="hidden md:block text-foreground/80 font-display
+        md:col-span-1 md:text-right ">{event.time}</span>
       </div>
     </motion.button>
   );

@@ -48,7 +48,7 @@ const TimelineSection = () => {
           background: "linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)",
         }}
       >
-        <div className="relative z-10 px-6 md:px-12 py-16">
+        <div className="relative z-10 px-6 md:px-5 py-16">
           {/* Header with title */}
           <motion.div
             initial={{ opacity: 0, y: -20 }}
