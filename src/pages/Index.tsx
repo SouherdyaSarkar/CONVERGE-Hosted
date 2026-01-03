@@ -99,26 +99,26 @@ const Index = () => {
 
   return (
     <main
-      ref={containerRef}
+      // ref={containerRef}
       className="bg-background min-h-screen overflow-hidden"
     >
-      <section id="home" className="scroll-panel h-screen">
+      <section id="home" className="h-screen">
         {isMobile ? <HeroSectionMobile /> : <HeroSectionDesktop />}
       </section>
 
-      <section className="scroll-panel h-screen">
+      <section className="h-auto">
         <EventsSection />
       </section>
 
-      <section className="scroll-panel h-screen">
+      <section className="h-auto">
         <TimelineSection />
       </section>
 
-      <section className="scroll-panel h-screen">
+      <section className="h-auto">
         <SponsorshipSection />
       </section>
 
-      <section className="scroll-panel overflow-y-auto h-screen">
+      <section className="h-auto">
         <TeamSelection />
       </section>
     </main>
