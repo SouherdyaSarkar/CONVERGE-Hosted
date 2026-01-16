@@ -8,9 +8,9 @@ const events = {
   technical: [
     {
       id: 1,
-      name: "Technical Event 1",
-      date: "16.03.26",
-      time: "10.00",
+      name: "Ideasprint",
+      date: "05.03.26",
+      time: "12.00",
       category: "technical",
       description:
         "Deep dive into advanced technical concepts and hands-on coding challenges.",
@@ -18,9 +18,9 @@ const events = {
     },
     {
       id: 2,
-      name: "Technical Event 2",
-      date: "16.03.26",
-      time: "12.00",
+      name: "Codesprint",
+      date: "07.03.26",
+      time: "08.00",
       category: "technical",
       description:
         "Explore cutting-edge technologies and industry best practices.",
@@ -28,9 +28,9 @@ const events = {
     },
     {
       id: 3,
-      name: "Technical Event 3",
-      date: "16.03.26",
-      time: "14.00",
+      name: "Tech talk",
+      date: "08.03.26",
+      time: "10.00",
       category: "technical",
       description: "Interactive workshop on modern development frameworks.",
       schedule: ["14:00 - Setup", "14:30 - Workshop", "15:30 - Demo"],
@@ -39,9 +39,9 @@ const events = {
   fun: [
     {
       id: 1,
-      name: "Fun Event 1",
-      date: "17.03.26",
-      time: "16.00",
+      name: "Games Carnival",
+      date: "07.03.26",
+      time: "11.00",
       category: "fun",
       description: "Exciting games and entertainment for all participants.",
       schedule: [
@@ -52,9 +52,22 @@ const events = {
     },
     {
       id: 2,
-      name: "Fun Event 2",
-      date: "17.03.26",
-      time: "16.30",
+      name: "Fun Event",
+      date: "08.03.26",
+      time: "11:00",
+      category: "fun",
+      description: "Team challenges and competitive activities.",
+      schedule: [
+        "16:30 - Team Formation",
+        "17:00 - Challenges",
+        "18:00 - Results",
+      ],
+    },
+    {
+      id: 2,
+      name: "Converge Got Talent",
+      date: "28.02.26",
+      time: "10.00",
       category: "fun",
       description: "Team challenges and competitive activities.",
       schedule: [
@@ -67,9 +80,9 @@ const events = {
   workshops: [
     {
       id: 1,
-      name: "Workshop 1",
-      date: "17.03.26",
-      time: "14.00",
+      name: "Agentic AI Workshop",
+      date: "07.03.26",
+      time: "15.00",
       category: "workshops",
       description: "Hands-on learning experience with expert instructors.",
       schedule: ["14:00 - Introduction", "14:30 - Hands-on", "15:30 - Wrap-up"],
@@ -82,15 +95,6 @@ const events = {
       category: "workshops",
       description: "Advanced techniques and practical applications.",
       schedule: ["14:00 - Opening", "14:45 - Session", "15:45 - Review"],
-    },
-    {
-      id: 3,
-      name: "Workshop 3",
-      date: "17.03.26",
-      time: "14.00",
-      category: "workshops",
-      description: "Interactive session covering industry insights.",
-      schedule: ["14:00 - Start", "14:30 - Workshop", "15:30 - Feedback"],
     },
   ],
 };
