@@ -11,6 +11,9 @@ import ferrariDriver from "../../assets/drivers/ferrari-driver.jpeg";
 import mercedesDriver from "../../assets/drivers/mercedes-driver.jpeg";
 import mclarenDriver from "../../assets/drivers/mclaren-driver.jpg";
 import { Instagram, Facebook, Twitter } from "lucide-react";
+import ieeecs from "../../assets/logo/ieeecs.png";
+import iem from "../../assets/logo/iem.png";
+import converge from "../../assets/logo/converge.png";
 
 const HeroSectionMobile = ({
   onTransition,
@@ -61,7 +64,7 @@ const HeroSectionMobile = ({
 
         {/* Hero image */}
         <motion.div
-          className="h-[75%] bg-white w-full rounded-[2rem] mb-4"
+          className="relative h-[75%] bg-white w-full rounded-[2rem] mb-4"
           initial={{ scale: 1.05, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -71,11 +74,38 @@ const HeroSectionMobile = ({
             backgroundPosition: "center",
           }}
         >
+          <div
+            className="w-full h-[15%]
+             rounded-t-[2rem]
+             shadow-sm
+             flex items-center justify-center"
+          >
+            <div
+              className="flex items-center gap-2 px-4 py-2
+                  bg-black rounded-full
+                  shadow-md"
+            >
+              <img src={iem} alt="IEM" className="h-7 object-contain" />
+
+              <div className="w-px h-[90%] bg-black" />
+
+              <img
+                src={converge}
+                alt="Converge"
+                className="h-7 object-contain"
+              />
+
+              <div className="w-px h-10 bg-black/20" />
+
+              <img src={ieeecs} alt="IEEE CS" className="h-7 object-contain" />
+            </div>
+          </div>
+
           {/* content div */}
           <motion.div
             className="absolute flex flex-col 
-            left-[10%] top-[20%] w-[80%] rounded-[2rem]
-            font-bold font-formula1 h-[45%]"
+            left-[10%] top-[18%] w-[80%] rounded-[2rem]
+            font-bold font-formula1"
             initial={{ y: 40, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
@@ -94,7 +124,7 @@ const HeroSectionMobile = ({
             >
               {/* Get ready for */}
               <motion.div
-                className="text-[clamp(0.6rem,2.5vw,0.8rem)] px-1"
+                className="text-[0.6rem] px-1"
                 variants={{
                   hidden: { x: -40, opacity: 0 },
                   show: { x: 0, opacity: 1 },
@@ -106,7 +136,7 @@ const HeroSectionMobile = ({
 
               {/* Converge 2026 */}
               <motion.div
-                className="text-[clamp(1.8rem,10vw,2.8rem)] px-1"
+                className="text-[2.0rem] px-1"
                 variants={{
                   hidden: { x: -80, opacity: 0 },
                   show: { x: 0, opacity: 1 },

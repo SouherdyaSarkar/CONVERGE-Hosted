@@ -11,8 +11,10 @@ import ferrariDriver from "../../assets/drivers/ferrari-driver.jpeg";
 import mercedesDriver from "../../assets/drivers/mercedes-driver.jpeg";
 import mclarenDriver from "../../assets/drivers/mclaren-driver.jpg";
 
-import iem from "../../assets/logos/Converge-Logos/iem.png";
-import converge from "../../assets/logos/Converge-Logos/CONVERGE.png";
+import iem from "../../assets/logo/iem.png";
+import converge from "../../assets/logo/CONVERGE.png";
+import ieeecs from "../../assets/logo/ieeecs.png";
+
 const HeroSectionDesktop = ({
   onTransition,
 }: {
@@ -193,7 +195,7 @@ const HeroSectionDesktop = ({
 
         {/* Event logos */}
         <motion.div
-          className="absolute top-0 left-20 z-50"
+          className="absolute top-0 left-0 z-50 w-[50%]"
           variants={fastSlide(0, -80)}
           initial="hidden"
           animate="visible"
@@ -203,29 +205,47 @@ const HeroSectionDesktop = ({
           }}
         >
           <div
-            className="flex items-center gap-8 bg-gradient-to-b 
-          from-white/50 via-white/40 to-transparent backdrop-blur-md 
-          border-x border-b border-white/40 px-10 py-2 
-          rounded-b-[2.5rem] shadow-lg hover:bg-white/20 
-          transition-all duration-500"
+            className="flex items-center bg-white backdrop-blur-md
+             border-x border-b border-white/40
+             rounded-br-[2.5rem] shadow-lg pr-4 pb-4
+             hover:bg-white/80 transition-all duration-500"
           >
-            <img
-              src={iem}
-              className="h-16 w-auto object-contain 
-              drop-shadow-md hover:scale-110 
-              transition-transform duration-300 cursor-pointer"
-              alt="IEM Logo"
-            />
+            <div
+              className="flex w-full items-center justify-between
+               bg-black px-8 py-4 gap-6
+               rounded-br-[2.5rem]"
+            >
+              {/* Logo 1 */}
+              <div className="flex items-center justify-center flex-1">
+                <img
+                  src={iem}
+                  alt="IEM Logo"
+                  className="h-12 md:h-14 object-contain"
+                />
+              </div>
 
-            <div className="w-[1px] h-12 bg-white/20"></div>
+              <div className="w-px h-10 bg-white/30" />
 
-            <img
-              src={converge}
-              className="h-12 w-auto object-contain drop-shadow-md 
-              scale-125 hover:scale-110 transition-transform 
-              duration-300 cursor-pointer"
-              alt="Converge Logo"
-            />
+              {/* Logo 2 */}
+              <div className="flex items-center justify-center flex-1">
+                <img
+                  src={converge}
+                  alt="Converge Logo"
+                  className="h-12 md:h-14 object-contain"
+                />
+              </div>
+
+              <div className="w-px h-10 bg-white/30" />
+
+              {/* Logo 3 */}
+              <div className="flex items-center justify-center flex-1">
+                <img
+                  src={ieeecs}
+                  alt="IEEE CS Logo"
+                  className="h-12 md:h-14 object-contain"
+                />
+              </div>
+            </div>
           </div>
         </motion.div>
 

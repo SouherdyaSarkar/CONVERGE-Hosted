@@ -323,7 +323,7 @@ const Footer = () => {
                   >
                     <Mail className="w-4 h-4 text-racing-red" />
                     <span className="text-sm font-mono text-white">
-                      converge@iem.edu
+                      converge@iem.edu.in
                     </span>
                   </a>
                 </div>
@@ -338,7 +338,7 @@ const Footer = () => {
                   >
                     <Phone className="w-4 h-4 text-racing-red" />
                     <span className="text-sm font-mono text-white">
-                      +91 8910169299
+                      +91 9674167092
                     </span>
                   </a>
                 </div>

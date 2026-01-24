@@ -155,7 +155,7 @@ const TeamSelection = () => {
                 <div className="relative z-10 h-full flex flex-col justify-between p-6">
                   <div />
                   <div className="text-center">
-                    <p className="font-display text-[0.7rem] md:text-lg font-bold text-white drop-shadow-sm">
+                    <p className="font-display text-[0.6rem] md:text-[1rem] font-bold text-white drop-shadow-sm">
                       {team.name}
                     </p>
                     <p className="font-display text-[0.5rem] md:text-sm text-white/80 mt-2 tracking-wide">

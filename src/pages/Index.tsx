@@ -17,6 +17,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
 import { useIsMobile } from "@/hooks/use-mobile";
+import useDeviceHeight from "@/hooks/useHeight";
 
 gsap.registerPlugin(ScrollTrigger);
 const Index = () => {
@@ -25,7 +26,7 @@ const Index = () => {
   const [hasCrest, setHasCrest] = useState(false);
   const navigate = useNavigate();
   const isMobile = useIsMobile();
-
+  const isHeightIncompatible = useDeviceHeight(700);
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -97,6 +98,21 @@ const Index = () => {
       <VideoLoader
         onDone={() => navigate("/select-crest", { replace: true })}
       />
+    );
+  }
+
+  if (isHeightIncompatible) {
+    return (
+      <div
+        className="w-screen h-screen flex items-center justify-center
+                    bg-black text-white text-center px-6"
+      >
+        <p className="text-lg font-semibold leading-relaxed">
+          Screen size incompatible for website,
+          <br />
+          try on another device
+        </p>
+      </div>
     );
   }
 
